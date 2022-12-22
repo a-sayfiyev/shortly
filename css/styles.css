@@ -11,49 +11,28 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
   background-color: #fff;
-  color: #222;
+  color: #9E9AA8;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
-
-
-/* AUTOFILL-STYLES */
-/*input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border-color: transparent;
-  -webkit-text-fill-color: inherit;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-}*/
-
-
-/* PLACEHOLDER-STYLES */
-/*::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder {
-  color: rgba(52, 49, 61, 0.5);
-  opacity: 1;
-}*/
 
 
 /* VISUALLY-HIDDEN */
@@ -72,7 +51,7 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -80,10 +59,71 @@ select:-webkit-autofill:focus {
 }
 
 
+/* HEADER */
+
+.site-header {
+}
+
+.site-header__container {
+  margin-top: 48px;
+}
+
+.site-header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-main-links {
+  display: flex;
+  align-items: center;
+}
+.logo-link {
+  margin-right: 45px;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links__link a {
+  color: #9E9AA8;
+}
+
+.navbar-links h4:not(:last-child) {
+  margin-right: 30px;
+}
+
+.navbar-registrations {
+  display: flex;
+  align-items: center;
+
+}
+
+.login {
+  margin-right: 37px;
+}
+
+.login a {
+  color: #9E9AA8;
+}
+
+.button-primary {
+  background-color: #2BD0D0;
+  padding: 8px 23px;
+  color: #fff;
+  border-radius: 28px;
+}
+
+
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
 }
+
+
+
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
